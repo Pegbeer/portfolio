@@ -22,6 +22,7 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>
+        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"/>
           <SwitchTheme/>
           {children}
         </Providers>

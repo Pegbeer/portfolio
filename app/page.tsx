@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <main className='bg-white dark:bg-darkGray min-h-screen w-screen'>
-            <main className='min-h-screen m-auto'>
+            <main className='flex flex-col gap-8 min-h-screen m-auto'>
               <TopAppBar />
               <Banner/>
               <LanguagesCarousel/>
