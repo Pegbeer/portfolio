@@ -22,12 +22,13 @@ export default function TopAppBar() {
             items-center 
             justify-between 
             gap-5
-            p-6
+            h-10vh
             transition-all
             duration-500
             ease-out
             text-black
             lg:mx-14
+            snap-start
             ${isOpen ? ' bg-darkGreen text-tan' : 'bg-transparent text-black dark:text-lightYellow'}`}>
             <Link href="/"><p className="text-lg font-bold">Portfolio</p></Link>
             <button

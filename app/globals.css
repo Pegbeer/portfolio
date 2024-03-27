@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
-
 /* Estilo personalizado para el efecto Ripple */
 .ripple {
     position: relative;
@@ -24,7 +21,7 @@
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
-    animation: rippleEffect 0.8s;
+    animation: rippleEffect 1s;
 }
 
 @keyframes rippleEffect {
@@ -41,29 +38,6 @@
     }
 }
 
-.scroll-container {
-    width: 100%;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    white-space: nowrap;
-  }
-
-  .scroll-content {
-    display: inline-flex;
-    scroll-snap-align: center;
-    animation: scroll 10s linear infinite;
-  }
-
-  .scroll-content > div {
-    scroll-snap-align: center;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+body::-webkit-scrollbar {
+    display: none;
+}

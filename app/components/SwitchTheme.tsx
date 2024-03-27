@@ -19,7 +19,7 @@ export default function SwitchTheme() {
 
     return (
         <>
-            <div className="fixed bottom-8 right-8">
+            <div className="fixed bottom-8 right-8 float-right z-50">
                 <div
                     className="flex items-center gap-2 p-1 rounded-full border-solid border-gray-400 border-4 cursor-pointer">
                     {currentTheme === 'dark' ? (

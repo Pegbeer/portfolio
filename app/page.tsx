@@ -1,15 +1,15 @@
-import Banner from './components/Banner';
-import LanguagesCarousel from './components/LanguagesCarousel';
 import TopAppBar from './components/TopAppBar';
+import Services from './services/page';
+import Start from './start/page';
 
 export default function Home() {
   return (
     <>
-      <main className='bg-white dark:bg-darkGray min-h-screen w-screen'>
-            <main className='flex flex-col gap-8 min-h-screen m-auto'>
+      <main className='bg-white dark:bg-darkGray h-auto w-screen'>
+            <main className='flex flex-col min-h-screen snap-mandatory snap-y scroll-smooth'>
               <TopAppBar />
-              <Banner/>
-              <LanguagesCarousel/>
+              <Start/>
+              <Services/>
             </main>
           </main>
     </>
